@@ -1,0 +1,423 @@
+html
+{
+    background: #fff;
+}
+
+body,
+html
+{
+    height: 100%;
+}
+
+body
+{
+    min-height: 100%;
+    margin: 0;
+}
+
+div
+{
+    max-height: 999999px;
+}
+
+.gridLayout
+{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'head head head'
+        'news news teaser'
+        'search search searchButton'
+        'advertising advertising advertising'
+        'topVis tvProg weather'
+        'topVis tvProg traffic'
+        'topVis tvProg map'
+        'topJoke autonews post';
+}
+
+.headline
+{
+    height: 42px;
+    padding-left: 30px;
+    margin-top: 10px;
+    grid-area: head;
+}
+
+.pageSetting
+{
+    margin-right: 200px;
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.geoIco
+{
+    content: url(https://pp.userapi.com/c639428/v639428369/623ad/DxkYslLkd54.jpg);
+    margin-bottom: -5px;
+}
+
+.geolink:hover .geoIco
+{
+    content: url(https://pp.userapi.com/c639428/v639428369/623a6/O1kmjXmJV_g.jpg);
+}
+
+.geoIco,
+.geolink a
+{
+    display: inline-block;
+}
+
+.geolink:hover,
+.pageSetting:hover,
+.newsSwitcher:hover,
+a:hover
+{
+    color: red;
+}
+
+a
+{
+    touch-action: manipulation;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.infoPanel
+{
+    margin-bottom: 15px;
+    margin-left: 189px;
+    padding-left: 65px;
+    grid-area: news;
+}
+
+.nowMediaBtn,
+.localMediaBtn
+{
+    display: none;
+}
+
+.nowMediaBtn:checked + .firstNewsSwitcher h1 .newsSwitcher,
+.localMediaBtn:checked + .secondNewsSwitcher h1 .newsSwitcher,
+.homeTabs a:visited,
+.blueLink,
+.blueLink:visited
+{
+    color: blue;
+}
+
+.firstNewsSwitcher,
+.secondNewsSwitcher
+{
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.nowMediaBtn:checked ~ .nowInMediaList,
+.localMediaBtn:checked ~ .localNewsList
+{
+    display: block;
+}
+
+.nowInMediaList,
+.localNewsList
+{
+    display: none;
+}
+
+.newsSwitcher
+{
+    font-weight: 400;
+    color: #6da2e1;
+}
+
+.geolink,
+.pageSetting
+{
+    display: inline-block;
+}
+
+.homeLink,
+.homeLink:visited
+{
+    color: black;
+}
+
+.homeLink:hover,
+.homeTabs a:hover
+{
+    color: red;
+}
+
+ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li
+{
+    margin-bottom: 10px;
+}
+
+.nowInMediaList ul li::before,
+.localNewsList ul li::before
+{
+    position: absolute;
+    margin-left: -14px;
+    content: '•';
+    font: .75em/1.6em Verdana, sans-serif;
+}
+
+.teaser
+{
+    margin-right: 189px;
+    grid-area: teaser;
+}
+
+.teaserLink
+{
+    position: relative;
+    display: inline-block;
+}
+
+.teaserAge
+{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: 3px;
+    padding: 2px 3px;
+    font-size: 78%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    opacity: .45;
+    border-radius: 3px;
+}
+
+h1
+{
+    font-size: 138.5%;
+    font-weight: 400;
+    display: block;
+    margin-top: 11px;
+}
+
+.datetime
+{
+    color: #999;
+    font-size: 84.6%;
+    white-space: nowrap;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.homeLogo
+{
+    display: inline-block;
+    background: url(https://yastatic.net/www/_/x/Q/xk8YidkhGjIGOrFm_dL5781YA.svg) no-repeat;
+    width: 140px;
+    height: 100px;
+    margin-left: -150px;
+    margin-bottom: -105px;
+    align-self: end;
+}
+
+.homeTabs
+{
+    white-space: nowrap;
+    font-size: 1.16em;
+    margin: 0;
+    height: 36px;
+}
+
+.homeTabs a
+{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.homeArrowSearch
+{
+    padding-left: 65px;
+    margin-left: 189px;
+    grid-area: search;
+}
+
+.inputSearch
+{
+    height: 32px;
+    border-width: 2px;
+    border-color: #ffdb4d;
+    border-style: solid;
+    overflow: hidden;
+}
+
+.inputControl
+{
+    margin-left: 13px;
+    height: 36px;
+    width: 100%;
+    padding: 0;
+    vertical-align: top;
+    color: #000;
+    border: 0 solid transparent;
+    outline: 0;
+    background: 0 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-appearance: none;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0;
+    text-shadow: none;
+    text-align: start;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.searchButton
+{
+    margin-bottom: -11px;
+    background: url('searchButton.jpg') no-repeat;
+    align-self: center;
+    margin-right: 189px;
+    grid-area: searchButton;
+    margin-left: 0;
+    width: 88px;
+    height: 36px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    overflow: hidden;
+}
+
+.searchExample
+{
+    margin-top: 8px;
+}
+
+.greyLink,
+.greyLink:visited
+{
+    color: #999;
+}
+
+.blackLink,
+.blackLink:visited
+{
+    color: black;
+}
+
+.redHover:hover
+{
+    color: red;
+}
+
+.adBanner
+{
+    grid-area: advertising;
+    margin-left: 254px;
+    margin-right: 189px;
+}
+
+.widgetMostVisited
+{
+    grid-area: topVis;
+    margin-left: 254px;
+}
+
+.widgetTVprogram
+{
+    grid-area: tvProg;
+}
+
+.weatherWidget
+{
+    grid-area: weather;
+}
+
+.widgetTraffic
+{
+    grid-area: traffic;
+}
+
+.widgetMapEkb
+{
+    grid-area: map;
+}
+
+.widgetHeader
+{
+    margin-bottom: 10px;
+}
+
+.programList li span,
+.programList li a
+{
+    margin-right: 8px;
+}
+
+.weatherWidget h1,
+.widgetTraffic h1,
+.widgetTVprogram h1
+{
+    display: inline-block;
+}
+
+.trafficIco,
+.weatherIco
+{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: -15px 7px -10px;
+}
+
+.widgetJokes
+{
+    width: 300px;
+    max-width: 300px;
+    grid-area: topJoke;
+    margin-left: 254px;
+}
+
+.widgetJokes input,
+.widgetJokes .joke,
+.widgetJokes label
+{
+    display: none;
+}
+
+.jokeSwicherBtn:checked + .joke,
+.jokeSwicherBtn:checked + .joke + label
+{
+    display: block;
+}
+
+.widgetAutonews
+{
+    width: 300px;
+    max-width: 300px;
+    grid-area: autonews;
+    padding-bottom: 10px;
+    box-shadow: inset 0 -20px 20px 1px rgba(209,209,209,1);
+}
+
+.autonewsList
+{
+    box-shadow: inset 0 20px 20px 1px rgba(209,209,209,1);
+    overflow: auto;
+    max-height: 300px;
+}
+
+.autonewsList a,
+.autonewsList .datetime
+{
+    margin-bottom: 11px;
+}
+
+.widgetPosts
+{
+    grid-area: post;
+}
