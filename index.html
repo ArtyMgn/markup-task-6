@@ -7,6 +7,23 @@
 </head>
 <body>
 <div class="gridLayout">
+        <input type="checkbox" name="column1"
+        id="wc1" class="widgetMVActivator checkboxForColumn1" checked>
+        <input type="checkbox" name="column1"
+        id="wc2" class="widgetJokesActivator checkboxForColumn1" checked>
+        <input type="checkbox" name="column2"
+        id="wc3" class="widgetTVprogramActivator checkboxForColumn2" checked>
+        <input type="checkbox" name="column2"
+        id="wc4" class="widgetAutonewsActivator checkboxForColumn2" checked>
+        <input type="checkbox" name="column3"
+        id="wc5" class="weatherWidgetActivator checkboxForColumn3" checked>
+        <input type="checkbox" name="column3"
+        id="wc6" class="widgetTrafficActivator checkboxForColumn3" checked>
+        <input type="checkbox" name="column3"
+        id="wc7" class="widgetMapEkbActivator checkboxForColumn3" checked>
+        <input type="checkbox" name="column3"
+        id="wc8" class="postsWidgetActivator checkboxForColumn3" checked>
+
     <div class="headline">
         <div class="geolink">
             <div class="geoIco"></div>
@@ -15,7 +32,41 @@
             <span class="geolinkReg greyLink redHover">Екатеринбург</span></a>
         </div>
         <div class="pageSetting">
-            <span>Настройки</span>
+            <input type="checkbox" id="settings" class="settingsCheckbox">
+            <label for="settings" class="settingsLabel">Настройки</label>
+            <div class="settingsList">
+                <label class="widgetControl widgetMVActivator" for="wc1">
+                    Посещаемое
+                </label><br>
+                <label class="widgetControl widgetJokesActivator" for="wc2">
+                    Лучшие Анекдоты
+                </label><br>
+                <label class="widgetControl widgetTVprogramActivator" for="wc3">
+                    Телепрограмма
+                </label><br>
+                <label class="widgetControl widgetAutonewsActivator" for="wc4">
+                    Автомобильные новости
+                </label><br>
+                <label class="widgetControl weatherWidgetActivator" for="wc5">
+                    Погода
+                </label><br>
+                <label class="widgetControl widgetTrafficActivator" for="wc6">
+                    Пробки
+                </label><br>
+                <label class="widgetControl widgetMapEkbActivator" for="wc7">
+                    Карта Екатеринбурга
+                </label><br>
+                <label class="widgetControl postsWidgetActivator" for="wc8">
+                    Афиша
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="mailBox">
+        <div class="mailboxInfo">
+            <p class="userEmail">ryzhckin</p>
+            <p>Почта <strong>50</strong></p>
         </div>
     </div>
 
@@ -89,45 +140,48 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="exchangeRates">
+                    <strong>
+                        <a class="homeLink redHover"
+                        href="https://news.yandex.ru/quotes/1.html"
+                         title="курс ЦБ РФ на 18/11">USD ЦБ</a>
+                    </strong>
+                    <span>59,63</span>
+                    <strong>
+                    <a class="homeLink redHover"
+                    href="https://news.yandex.ru/quotes/23.html"
+                    title="курс ЦБ РФ на 18/11">EUR ЦБ</a>
+                    </strong>
+                    <span>70,36</span>
+                    <strong>
+                    <a class="homeLink redHover"
+                    href="https://news.yandex.ru/quotes/1006.html"
+                    title="цена на 20/11 10:28">НЕФТЬ</a>
+                    </strong>
+                    <span>62,56</span>
+            </div>
         </div>
-        <div class="exchangeRates">
-            <strong>
-                <a class="homeLink redHover"
-                href="https://news.yandex.ru/quotes/1.html"
-                 title="курс ЦБ РФ на 18/11">USD ЦБ</a>
-            </strong>
-            <span>59,63</span>
-            <strong>
-            <a class="homeLink redHover"
-            href="https://news.yandex.ru/quotes/23.html"
-            title="курс ЦБ РФ на 18/11">EUR ЦБ</a>
-            </strong>
-            <span>70,36</span>
-            <strong>
-            <a class="homeLink redHover"
-            href="https://news.yandex.ru/quotes/1006.html"
-            title="цена на 20/11 10:28">НЕФТЬ</a>
-            </strong>
-            <span>62,56</span>
+
+        <div class="teaser">
+                <a class="teaserLink redHover" href="http://bit.ly/2z6F1lx">
+                    <img src="optimize.png" width="120" height="90" alt="Яндекс.Браузер">
+                    <div class="teaserAge">0+</div>
+                </a>
+                <br>
+                <h1>
+                    <a href="http://bit.ly/2z6F1lx">
+                        Браузер <br>без опасности
+                    </a>
+                </h1>
+                <span>Технология Протект</span>
         </div>
-    </div>
-    <div class="teaser">
-        <a class="teaserLink redHover" href="http://bit.ly/2z6F1lx">
-            <img src="optimize.png" width="120" height="90" alt="Яндекс.Браузер">
-            <div class="teaserAge">0+</div>
-        </a>
-        <br>
-        <h1>
-            <a href="http://bit.ly/2z6F1lx">
-                Браузер <br>без опасности
-            </a>
-        </h1>
-        <span>Технология Протект</span>
+
     </div>
 
+    <div class="homeLogo">
+    </div>
     <div class="homeArrowSearch">
-            <div class="homeLogo">
-                </div>
         <div class="homeTabs">
             <a class="redHover" href="https://yandex.ru/video/">Видео</a>
             <a class="redHover" href="https://yandex.ru/images/">Картинки</a>
@@ -138,314 +192,328 @@
             <a class="redHover" href="https://music.yandex.ru/home">Музыка</a>
             <a class="redHover" href="https://yandex.ru/all">ещё</a>
         </div>
+        <div class="logo">
+            <img class="logo" src="https://yastatic.net/www/_/x/Q/xk8YidkhGjIGOrFm_dL5781YA.svg" alt="logo">
+        </div>
         <div class="inputSearch">
             <input type="text" class="inputControl">
         </div>
+        <button class="searchButton">
+        </button>
         <p class="searchExample">Найдётся всё. Например,
-            <a class="greyLink redHover" href="http://bit.ly/2iBBDsx">где погулять в сочи</a>
+                <a class="greyLink redHover" href="http://bit.ly/2iBBDsx">где погулять в сочи</a>
         </p>
     </div>
-    <button class="searchButton">
-    </button>
 
     <a class="adBanner" href="http://bit.ly/2mIjQnW">
         <img src="http://bit.ly/2zXFNCD" alt="197 Свободная история">
     </a>
+    <div class="widgetsArea">
+        <div class="widgetsColumn wCol1">
+            <div class="widgetMostVisited widget">
+                <h1 class="widgetHeader">
+                    <a class="blueLink redHover" href="https://www.yandex.ru/all">
+                        Посещаемое
+                    </a>
+                </h1>
+                <ul>
+                    <li>
+                        <strong>
+                            <a class="blackLink redHover" href="http://bit.ly/2z5y9VA">Маркет</a>
+                        </strong>
+                        <span>—</span>
+                        <a class="blackLink redHover" href="http://bit.ly/2zkqFC1">Зимние шины</a>
+                    </li>
 
-    <div class="widgetMostVisited widget">
-        <h1 class="widgetHeader">
-            <a class="blueLink redHover" href="https://www.yandex.ru/all">
-                Посещаемое
-            </a>
-        </h1>
-        <ul>
-            <li>
-                <strong>
-                    <a class="blackLink redHover" href="http://bit.ly/2z5y9VA">Маркет</a>
-                </strong>
-                <span>—</span>
-                <a class="blackLink redHover" href="http://bit.ly/2zkqFC1">Зимние шины</a>
-            </li>
+                    <li>
+                        <strong>
+                            <a class="blackLink redHover" href="http://bit.ly/2iAIjqX">Авто.ру</a>
+                        </strong>
+                        <span>—</span>
+                        <a class="blackLink redHover" href="http://bit.ly/2hGWMRr">новый мощный Туссан</a>
+                    </li>
 
-            <li>
-                <strong>
-                    <a class="blackLink redHover" href="http://bit.ly/2iAIjqX">Авто.ру</a>
-                </strong>
-                <span>—</span>
-                <a class="blackLink redHover" href="http://bit.ly/2hGWMRr">новый мощный Туссан</a>
-            </li>
+                    <li>
+                        <strong>
+                            <a class="blackLink redHover" href="http://bit.ly/2hOdDVW">Недвижимость</a>
+                        </strong>
+                        <span>—</span>
+                        <a class="blackLink redHover" href="http://bit.ly/2j9cSU8">продажа 1-комнатной</a>
+                    </li>
+                    <li>
+                        <strong>
+                            <a class="blackLink redHover" href="http://bit.ly/2hOdDVW">Работа</a>
+                        </strong>
+                        <span>—</span>
+                        <a class="blackLink redHover" href="http://bit.ly/2hOPJcO">упаковщик</a>
+                    </li>
 
-            <li>
-                <strong>
-                    <a class="blackLink redHover" href="http://bit.ly/2hOdDVW">Недвижимость</a>
-                </strong>
-                <span>—</span>
-                <a class="blackLink redHover" href="http://bit.ly/2j9cSU8">продажа 1-комнатной</a>
-            </li>
-            <li>
-                <strong>
-                    <a class="blackLink redHover" href="http://bit.ly/2hOdDVW">Работа</a>
-                </strong>
-                <span>—</span>
-                <a class="blackLink redHover" href="http://bit.ly/2hOPJcO">упаковщик</a>
-            </li>
+                    <li>
+                        <strong>
+                            <a class="blackLink redHover" href="https://travel.yandex.ru/">Путешествия</a>
+                        </strong>
+                        <span>—</span>
+                        <a class="blackLink redHover" href="http://bit.ly/2jIU4yN">туры в Испанию</a>
+                    </li>
 
-            <li>
-                <strong>
-                    <a class="blackLink redHover" href="https://travel.yandex.ru/">Путешествия</a>
-                </strong>
-                <span>—</span>
-                <a class="blackLink redHover" href="http://bit.ly/2jIU4yN">туры в Испанию</a>
-            </li>
+                    <li>
+                        <strong>
+                            <a class="blackLink redHover" href="https://yandex.ru/video">Видео</a>
+                        </strong>
+                        <span>—</span>
+                        <a class="blackLink redHover" href="http://bit.ly/2AhOHxN">как помыть кота</a>
+                    </li>
 
-            <li>
-                <strong>
-                    <a class="blackLink redHover" href="https://yandex.ru/video">Видео</a>
-                </strong>
-                <span>—</span>
-                <a class="blackLink redHover" href="http://bit.ly/2AhOHxN">как помыть кота</a>
-            </li>
+                    <li>
+                        <strong>
+                            <a class="blackLink redHover" href="https://yandex.ru/images/">Картинки</a>
+                        </strong>
+                        <span>—</span>
+                        <a class="blackLink redHover" href="http://bit.ly/2AXrbCw">космос и планеты</a>
+                    </li>
+                </ul>
+            </div>
 
-            <li>
-                <strong>
-                    <a class="blackLink redHover" href="https://yandex.ru/images/">Картинки</a>
-                </strong>
-                <span>—</span>
-                <a class="blackLink redHover" href="http://bit.ly/2AXrbCw">космос и планеты</a>
-            </li>
-        </ul>
-    </div>
+            <div class="widgetJokes widget">
+                <h1 class="widgetHeader">
+                    <a class="blueLink redHover" href="http://bit.ly/2B5ovDP">
+                        Лучшие Анекдоты
+                    </a>
+                </h1>
 
-    <div class="widgetTVprogram">
-        <h1 class="widgetHeader">
-            <a class="blueLink redHover" href="https://www.yandex.ru/all">
-                Телепрограмма
-            </a>
-        </h1>
-        <img src="https://pp.userapi.com/c639428/v639428921/6a7d6/_Vzv8MnRkoI.jpg" alt="ТВ онлайн">
-        <ul class="programList">
-            <li>
-                <span>23:00</span>
-                <a class="blackLink redHover" href="http://bit.ly/2zk8xbB" title="След (с ума сойти)">След</a>
-                <a class="greyLink redHover" href="http://bit.ly/2hIaHXv">Пятый канал</a>
-            </li>
+                <input type="radio" name="jokeSwicher" id="jokeSwicher4" class="jokeSwicherBtn">
+                <div class="joke">
+                        <p>- Чем отличается программист от политика?</p>
+                        <p>- Программисту платят деньги за работающие программы.</p>
+                </div>
+                <label class="blueLink redHover" for="jokeSwicher5">Показать еще</label>
 
-            <li>
-                <span>23:00</span>
-                <a class="blackLink redHover" href="http://bit.ly/2zkkRsp">Ангел света</a>
-                <a class="greyLink redHover" href="https://tv.yandex.ru/54/channels/242">ТВ-3</a>
-            </li>
+                <input type="radio" name="jokeSwicher" id="jokeSwicher3" class="jokeSwicherBtn">
+                <p class="joke">Каждый админ должен вырастить бороду,
+                    посадить кактус, и построить доменную структуру.</p>
+                <label class="blueLink redHover" for="jokeSwicher4">Показать еще</label>
 
-            <li>
-                <span>23:00</span>
-                <a class="blackLink redHover" href="http://bit.ly/2AXMC6x">Свадебный размер</a>
-                <a class="greyLink redHover" href="https://tv.yandex.ru/54/channels/725">41 Домашний</a>
-            </li>
+                <input type="radio" name="jokeSwicher" id="jokeSwicher2" class="jokeSwicherBtn">
+                <p class="joke">99% ошибок компьютера сидит в полуметре от монитора.</p>
+                <label class="blueLink redHover" for="jokeSwicher3">Показать еще</label>
 
-            <li>
-                <span>23:25</span>
-                <a class="blackLink redHover" href="http://bit.ly/2mLLQqL">Вечерний Ургант</a>
-                <a class="greyLink redHover" href="https://tv.yandex.ru/54/channels/265">Первый</a>
-            </li>
+                <input type="radio" name="jokeSwicher" id="jokeSwicher1" class="jokeSwicherBtn" checked>
+                <div class="joke">
+                        <p>- Почему ваши дети все время ссорятся?</p>
+                        <p>- Kонфликт версий, - отвечает программист.</p>
+                </div>
+                <label class="blueLink redHover" for="jokeSwicher2">Показать еще</label>
 
-            <li>
-                <span>23:35</span>
-                <a class="blackLink redHover" href="http://bit.ly/2B72p3H">Итоги дня</a>
-                <a class="greyLink redHover" href="https://tv.yandex.ru/54/channels/459">НТВ</a>
-            </li>
-        </ul>
-    </div>
-
-    <div class="weatherWidget">
-        <h1 class="widgetHeader">
-            <a class="blueLink redHover" href="https://www.yandex.ru/all">
-                Погода
-            </a>
-        </h1>
-        <a href="http://bit.ly/2z6bkkI" title="облачно с прояснениями">
-            <img class="weatherIco" src="weatherIco.svg" alt="облачно с прояснениями">
-            <span>−2 °C</span>
-        </a>
-        <br>
-        <span>Утро −2,  день −1</span>
-    </div>
-
-    <div class="widgetTraffic">
-        <h1 class="widgetHeader">
-            <a class="blueLink redHover" href="http://bit.ly/2AgoBvf">
-                Пробки
-            </a>
-        </h1>
-        <a href="http://bit.ly/2z6bkkI">
-            <img class="trafficIco"
-             src="https://pp.userapi.com/c639428/v639428921/6a7cf/HS6FD6kCORw.jpg"
-             alt="нет пробок">
-            <span>1 балл</span>
-        </a>
-        <br>
-        <span>На дорогах свободно</span>
-    </div>
-
-    <div class="widgetMapEkb">
-        <h1 class="widgetHeader">
-            <a class="blueLink redHover" href="http://bit.ly/2B5ovDP">
-                Карта Екатеринбурга
-            </a>
-        </h1>
-        <strong><a class="blackLink redHover" href="http://bit.ly/2AX61EL">Такси</a></strong>
-        <strong><a class="blackLink redHover" href="http://bit.ly/1Ayx6aF">Расписания</a></strong><br>
-        <strong><a class="blackLink redHover" href="http://bit.ly/2hLFYfC">Междугородные автобусы</a></strong>
-    </div>
-
-    <div class="widgetJokes">
-        <h1 class="widgetHeader">
-            <a class="blueLink redHover" href="http://bit.ly/2B5ovDP">
-                Лучшие Анекдоты
-            </a>
-        </h1>
-
-        <input type="radio" name="jokeSwicher" id="jokeSwicher4" class="jokeSwicherBtn">
-        <div class="joke">
-                <p>- Чем отличается программист от политика?</p>
-                <p>- Программисту платят деньги за работающие программы.</p>
+                <input type="radio" name="jokeSwicher" id="jokeSwicher5" class="jokeSwicherBtn">
+                <p class="joke">Программист - человек, который решает проблему,
+                    о которой вы и не знали, таким способом, который вы не понимаете.</p>
+                <label class="blueLink redHover" for="jokeSwicher1">Показать еще</label>
+            </div>
         </div>
-        <label class="blueLink redHover" for="jokeSwicher5">Показать еще</label>
 
-        <input type="radio" name="jokeSwicher" id="jokeSwicher3" class="jokeSwicherBtn">
-        <p class="joke">Каждый админ должен вырастить бороду,
-            посадить кактус, и построить доменную структуру.</p>
-        <label class="blueLink redHover" for="jokeSwicher4">Показать еще</label>
+        <div class="widgetsColumn wCol2">
+            <div class="widgetTVprogram widget">
+                <h1 class="widgetHeader">
+                    <a class="blueLink redHover" href="https://www.yandex.ru/all">
+                        Телепрограмма
+                    </a>
+                </h1>
+                <img src="https://pp.userapi.com/c639428/v639428921/6a7d6/_Vzv8MnRkoI.jpg" alt="ТВ онлайн">
+                <ul class="programList">
+                    <li>
+                        <span>23:00</span>
+                        <a class="blackLink redHover"
+                        href="http://bit.ly/2zk8xbB" title="След (с ума сойти)">След</a>
+                        <a class="greyLink redHover" href="http://bit.ly/2hIaHXv">Пятый канал</a>
+                    </li>
 
-        <input type="radio" name="jokeSwicher" id="jokeSwicher2" class="jokeSwicherBtn">
-        <p class="joke">99% ошибок компьютера сидит в полуметре от монитора.</p>
-        <label class="blueLink redHover" for="jokeSwicher3">Показать еще</label>
+                    <li>
+                        <span>23:00</span>
+                        <a class="blackLink redHover" href="http://bit.ly/2zkkRsp">Ангел света</a>
+                        <a class="greyLink redHover" href="https://tv.yandex.ru/54/channels/242">ТВ-3</a>
+                    </li>
 
-        <input type="radio" name="jokeSwicher" id="jokeSwicher1" class="jokeSwicherBtn" checked>
-        <div class="joke">
-                <p>- Почему ваши дети все время ссорятся?</p>
-                <p>- Kонфликт версий, - отвечает программист.</p>
+                    <li>
+                        <span>23:00</span>
+                        <a class="blackLink redHover"
+                        href="http://bit.ly/2AXMC6x">Свадебный размер</a>
+                        <a class="greyLink redHover"
+                        href="https://tv.yandex.ru/54/channels/725">41 Домашний</a>
+                    </li>
+
+                    <li>
+                        <span>23:25</span>
+                        <a class="blackLink redHover" href="http://bit.ly/2mLLQqL">Вечерний Ургант</a>
+                        <a class="greyLink redHover" href="https://tv.yandex.ru/54/channels/265">Первый</a>
+                    </li>
+
+                    <li>
+                        <span>23:35</span>
+                        <a class="blackLink redHover" href="http://bit.ly/2B72p3H">Итоги дня</a>
+                        <a class="greyLink redHover" href="https://tv.yandex.ru/54/channels/459">НТВ</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="widgetAutonews widget">
+                <h1 class="widgetHeader">
+                    <a class="blueLink redHover" href="http://bit.ly/2B5ovDP">
+                        Автомобильные новости
+                    </a>
+                </h1>
+                <div class="autonewsList">
+                    <ul>
+                        <li>
+                            <a class="blackLink redHover" href="http://bit.ly/2hEGNmH">
+                                Volvo снизила цены на XC60 еще до начала продаж
+                            </a>
+                            <span class="datetime">20/11</span><br>
+                        </li>
+                        <li>
+                            <a class="blackLink redHover" href="http://bit.ly/2zVzW2E">
+                                Автостат: В РФ рынок авто с пробегом в октябре возрос на 1%
+                            </a>
+                            <span class="datetime">20/11</span><br>
+                        </li>
+                        <li>
+                            <a class="blackLink redHover" href="http://bit.ly/2B03VDT">
+                                Завод Hino в Подмосковье начнут строить весной 2018 года
+                            </a>
+                            <span class="datetime">20/11</span><br>
+                        </li>
+                        <li>
+                            <a class="blackLink redHover" href="http://bit.ly/2jbVApl">
+                                Mercedes-Benz показал интерьер купе CLS на втором тизере
+
+                            </a>
+                            <span class="datetime">20/11</span><br>
+                        </li>
+                        <li>
+                            <a class="blackLink redHover" href="http://bit.ly/2hFSrxB">
+                                Хэтчбек Suzuki Swift стал «Автомобилем года 2017» в Японии
+
+                            </a>
+                            <span class="datetime">20/11</span><br>
+                        </li>
+                        <li>
+                            <a class="blackLink redHover" href="http://bit.ly/2zmUMZD">
+                                Автомобиль маршала Жукова выставлен на продажу
+                            </a>
+                            <span class="datetime">20/11</span><br>
+                        </li>
+                        <li>
+                            <a class="blackLink redHover" href="http://bit.ly/2zmUMZD">
+                                Инженеры рассказали, как выкрутиться, если сел аккумулятор
+                            </a>
+                            <span class="datetime">20/11</span><br>
+                        </li>
+                        <li>
+                            <a class="blackLink redHover" href="http://bit.ly/2B8Jwxi">
+                                В России цена на лифтбек Skoda Rapid выросла на 17 тысяч рублей
+                            </a>
+                            <span class="datetime">20/11</span><br>
+                        </li>
+
+                        <li>
+                            <a class="blackLink redHover" href="http://bit.ly/2hPJupk">
+                                Volvo объявила цены и комплектации нового кроссовера XC60
+                            </a>
+                            <span class="datetime">20/11</span><br>
+                        </li>
+                        <li>
+                            <a class="blackLink redHover" href="http://bit.ly/2j9KLnU">
+                                Спортивный седан BMW M850i выпустят на рынок в 2018 году
+                            </a>
+                            <span class="datetime">19/11</span><br>
+                        </li>
+                </ul>
+                </div>
+            </div>
         </div>
-        <label class="blueLink redHover" for="jokeSwicher2">Показать еще</label>
 
-        <input type="radio" name="jokeSwicher" id="jokeSwicher5" class="jokeSwicherBtn">
-        <p class="joke">Программист - человек, который решает проблему,
-            о которой вы и не знали, таким способом, который вы не понимаете.</p>
-        <label class="blueLink redHover" for="jokeSwicher1">Показать еще</label>
-    </div>
+        <div class="widgetsColumn wCol3">
+            <div class="weatherWidget widget">
+                <h1 class="widgetHeader">
+                    <a class="blueLink redHover" href="https://www.yandex.ru/all">
+                        Погода
+                    </a>
+                </h1>
+                <a href="http://bit.ly/2z6bkkI" title="облачно с прояснениями">
+                    <img class="weatherIco" src="weatherIco.svg" alt="облачно с прояснениями">
+                    <span>−2 °C</span>
+                </a>
+                <br>
+                <span>Утро −2, день −1</span>
+            </div>
 
-    <div class="widgetAutonews">
-        <h1 class="widgetHeader">
-            <a class="blueLink redHover" href="http://bit.ly/2B5ovDP">
-                Автомобильные новости
-            </a>
-        </h1>
-        <div class="autonewsList">
-            <ul>
-                <li>
-                    <a class="blackLink redHover" href="http://bit.ly/2hEGNmH">
-                        Volvo снизила цены на XC60 еще до начала продаж
+            <div class="widgetTraffic widget">
+                <h1 class="widgetHeader">
+                    <a class="blueLink redHover" href="http://bit.ly/2AgoBvf">
+                        Пробки
                     </a>
-                    <span class="datetime">20/11</span><br>
-                </li>
-                <li>
-                    <a class="blackLink redHover" href="http://bit.ly/2zVzW2E">
-                        Автостат: В РФ рынок авто с пробегом в октябре возрос на 1%
-                    </a>
-                    <span class="datetime">20/11</span><br>
-                </li>
-                <li>
-                    <a class="blackLink redHover" href="http://bit.ly/2B03VDT">
-                        Завод Hino в Подмосковье начнут строить весной 2018 года
-                    </a>
-                    <span class="datetime">20/11</span><br>
-                </li>
-                <li>
-                    <a class="blackLink redHover" href="http://bit.ly/2jbVApl">
-                        Mercedes-Benz показал интерьер купе CLS на втором тизере
+                </h1>
+                <a href="http://bit.ly/2z6bkkI">
+                    <img class="trafficIco"
+                    src="https://pp.userapi.com/c639428/v639428921/6a7cf/HS6FD6kCORw.jpg"
+                    alt="нет пробок">
+                    <span>1 балл</span>
+                </a>
+                <br>
+                <span>На дорогах свободно</span>
+            </div>
 
+            <div class="widgetMapEkb widget">
+                <h1 class="widgetHeader">
+                    <a class="blueLink redHover" href="http://bit.ly/2B5ovDP">
+                        Карта Екатеринбурга
                     </a>
-                    <span class="datetime">20/11</span><br>
-                </li>
-                <li>
-                    <a class="blackLink redHover" href="http://bit.ly/2hFSrxB">
-                        Хэтчбек Suzuki Swift стал «Автомобилем года 2017» в Японии
+                </h1>
+                <strong><a class="blackLink redHover" href="http://bit.ly/2AX61EL">Такси</a></strong>
+                <strong><a class="blackLink redHover" href="http://bit.ly/1Ayx6aF">Расписания</a></strong><br>
+                <strong><a class="blackLink redHover"
+                    href="http://bit.ly/2hLFYfC">Междугородные автобусы</a></strong>
+            </div>
 
+            <div class="widgetPosts widget">
+                <h1 class="widgetHeader">
+                    <a class="blueLink redHover" href="http://bit.ly/2B5ovDP">
+                        Афиша
                     </a>
-                    <span class="datetime">20/11</span><br>
-                </li>
-                <li>
-                    <a class="blackLink redHover" href="http://bit.ly/2zmUMZD">
-                        Автомобиль маршала Жукова выставлен на продажу
-                    </a>
-                    <span class="datetime">20/11</span><br>
-                </li>
-                <li>
-                    <a class="blackLink redHover" href="http://bit.ly/2zmUMZD">
-                        Инженеры рассказали, как выкрутиться, если сел аккумулятор
-                    </a>
-                    <span class="datetime">20/11</span><br>
-                </li>
-                <li>
-                    <a class="blackLink redHover" href="http://bit.ly/2B8Jwxi">
-                        В России цена на лифтбек Skoda Rapid выросла на 17 тысяч рублей
-                    </a>
-                    <span class="datetime">20/11</span><br>
-                </li>
+                </h1>
+                <ul>
+                    <li>
+                        <a class="blackLink redHover" href="http://bit.ly/2zU37U6">Коматозники</a>
+                        <span class="datetime">премьера в чт</span>
+                    </li>
+                    <li>
+                            <a class="blackLink redHover" href="http://bit.ly/2mNIm7w">Тор: Рагнарёк</a>
+                            <span class="datetime">фэнтези</span>
+                    </li>
 
-                <li>
-                    <a class="blackLink redHover" href="http://bit.ly/2hPJupk">
-                        Volvo объявила цены и комплектации нового кроссовера XC60
-                    </a>
-                    <span class="datetime">20/11</span><br>
-                </li>
-                <li>
-                    <a class="blackLink redHover" href="http://bit.ly/2j9KLnU">
-                        Спортивный седан BMW M850i выпустят на рынок в 2018 году
-                    </a>
-                    <span class="datetime">19/11</span><br>
-                </li>
-        </ul>
+                    <li>
+                        <a class="blackLink redHover" href="http://bit.ly/2B5GEB8">Лига справедливости</a>
+                        <span class="datetime">фантастика</span>
+                    </li>
+
+                    <li>
+                        <a class="blackLink redHover" href="http://bit.ly/2AWKDiD">Последний богатырь</a>
+                        <span class="datetime">приключения</span>
+                    </li>
+                    <li>
+                        <a class="blackLink redHover" href="http://bit.ly/2jL1SjX">Тайна Коко</a>
+                        <span class="datetime">премьера в чт</span>
+                    </li>
+
+                    <li>
+                        <strong>
+                        <a class="blackLink redHover" href="http://bit.ly/2jFhEg3">Концерты</a>
+                        <span>—</span>
+                        <a class="blackLink redHover" href="http://bit.ly/2izPHCY">Слава КПСС</a>
+                        </strong>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-
-    <div class="widgetPosts">
-        <h1 class="widgetHeader">
-            <a class="blueLink redHover" href="http://bit.ly/2B5ovDP">
-                Афиша
-            </a>
-        </h1>
-        <ul>
-            <li>
-                <a class="blackLink redHover" href="http://bit.ly/2zU37U6">Коматозники</a>
-                <span class="datetime">премьера в чт</span>
-            </li>
-            <li>
-                    <a class="blackLink redHover" href="http://bit.ly/2mNIm7w">Тор: Рагнарёк</a>
-                    <span class="datetime">фэнтези</span>
-            </li>
-
-            <li>
-                <a class="blackLink redHover" href="http://bit.ly/2B5GEB8">Лига справедливости</a>
-                <span class="datetime">фантастика</span>
-            </li>
-
-            <li>
-                <a class="blackLink redHover" href="http://bit.ly/2AWKDiD">Последний богатырь</a>
-                <span class="datetime">приключения</span>
-            </li>
-            <li>
-                <a class="blackLink redHover" href="http://bit.ly/2jL1SjX">Тайна Коко</a>
-                <span class="datetime">премьера в чт</span>
-            </li>
-
-            <li>
-                <strong>
-                <a class="blackLink redHover" href="http://bit.ly/2jFhEg3">Концерты</a>
-                <span>—</span>
-                <a class="blackLink redHover" href="http://bit.ly/2izPHCY">Слава КПСС</a>
-                </strong>
-            </li>
-        </ul>
     </div>
 </div>
 </body>
